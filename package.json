@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "gatsby": "^2.15.28",
-    "gatsby-theme-publisher": "^1.0.0",
+    "@staticfuse/gatsby-theme-publisher": "^0.9.2",
     "react": "^16.10.0",
     "react-dom": "^16.10.0"
   }
