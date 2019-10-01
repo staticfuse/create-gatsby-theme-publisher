@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
   "dependencies": {
     "gatsby": "^2.15.28",
-    "@staticfuse/gatsby-theme-publisher": "^0.9.2",
+    "@staticfuse/gatsby-theme-publisher": "^0.9.4",
     "react": "^16.10.0",
     "react-dom": "^16.10.0"
   }
