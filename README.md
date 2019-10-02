@@ -7,6 +7,7 @@ A Gatsby starter that has the [Gatsby Theme Publisher](https://github.com/static
 1. Clone this repo
 2. cd into repo
 3. yarn
+4. Edit gatsby-config.js with your information and save
 4. yarn dev
 
 ## Extending & Theme Options
