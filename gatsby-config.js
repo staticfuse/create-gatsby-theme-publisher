@@ -1,20 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: 'Scott Bolinger',
+    title: 'Static Fuse',
     description: 'Headless WordPress with Gatsby FTW.',
-    author: 'Scott Bolinger',
-    twitter: '@scottbolinger',
-    siteUrl: `https://scottbolinger.com`,
+    author: 'Scott and Justin',
+    twitter: '@staticfuse',
+    siteUrl: `https://staticfuse.com`,
   },
   plugins: [
     {
       resolve: `@staticfuse/gatsby-theme-publisher`,
       options: {
-        menuName: `PRIMARY`,
+        starterPages: true,
         mailChimpEndpoint: 0,
         dynamicComments: 1,
         gaTrackingId: 0,
-        wordPressUrl: `http://data.gatsby.develop`,
+        wordPressUrl: `https://staticfuse.wpengine.com`,
         blogURI: '/blog'
       },
     },
