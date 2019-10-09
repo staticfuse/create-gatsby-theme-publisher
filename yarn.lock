@@ -1445,10 +1445,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@staticfuse/gatsby-theme-publisher@^0.9.4":
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/@staticfuse/gatsby-theme-publisher/-/gatsby-theme-publisher-0.9.4.tgz#eb5322a258f8f2a50d8a86cbf3f99c7bb1cc5137"
-  integrity sha512-hBRPtLS6Wx3Bk9M4bnr83eSAM9OTGSxFPIUKv6mhBxrnZOpG3gh43VXqjyTCZKBFhDrBU5AGy6C7oC5/eYRFTQ==
+"@staticfuse/gatsby-theme-publisher@latest":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@staticfuse/gatsby-theme-publisher/-/gatsby-theme-publisher-0.10.1.tgz#a1a7d739a2dbf790cf308419f447384b6b815932"
+  integrity sha512-HTiVaMcBNeGShGJXTBeSWF8FMlWg81PrYPWtN0gq9hiIEojM+k0jrSsger0TPeL0GlUw3nB/5caUoVIoMamZLw==
   dependencies:
     "@chakra-ui/core" "^0.2.8"
     "@emotion/core" "^10.0.17"
