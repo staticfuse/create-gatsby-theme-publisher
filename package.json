@@ -1,6 +1,6 @@
 {
-  "name": "create-gatsby-theme-publisher",
-  "version": "0.9.1",
+  "name": "staticfuse-site",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
