@@ -2,6 +2,8 @@
 
 A Gatsby starter that has the [Gatsby Theme Publisher](https://github.com/staticfuse/gatsby-theme-publisher) installed and preconfigured.
 
+For a full tutorial, please see our article on [headless WordPress with Gatsby](https://staticfuse.com/blog/how-to-build-headless-wordpress-sites-with-gatsby/).
+
 ### Prequisites
 
 - [Node and NPM](https://www.gatsbyjs.org/tutorial/part-zero/#-install-nodejs-and-npm)
@@ -35,12 +37,12 @@ module.exports = {
     {
       resolve: `@staticfuse/gatsby-theme-publisher`,
       options: {
-        starterPages: true,
-        mailChimpEndpoint: 0,
-        dynamicComments: 1,
-        gaTrackingId: 0,
-        wordPressUrl: `https://staticfuse.wpengine.com`, // The url of your WordPress install
-        blogURI: '/blog' // Or whatever you'd prefer
+        starterPages: true, // add a customizable home, about, and contact page
+        mailChimpEndpoint: 0, // https://www.gatsbyjs.org/packages/gatsby-plugin-mailchimp/#mailchimp-endpoint
+        dynamicComments: 1, // enable comments
+        gaTrackingId: 0, // google analytics tracking
+        wordPressUrl: `https://data.mysite.com`, // The url of your WordPress install
+        blogURI: '/blog' // The page to display your posts
       },
     },
   ],
@@ -49,93 +51,4 @@ module.exports = {
 
 ## Publisher Theme Options
 
-The following options can be configured in [your site's gatsby-config.js](https://github.com/staticfuse/create-gatsby-theme-publisher/blob/master/demo/gatsby-config.js#L12)
-
-### Site Metadata
-
-In demo/gatsby-config.js, edit the siteMetadata object with your site title, url, etc.
-
-Note: `siteUrl` refers to your final website address. `wordPressUrl` in the plugin options refers to the WordPress site. For example, your WordPress site may be hosted at mybusiness.wpengine.com, but your Gatsby site will be at mybusiness.com.
-
-| Option | Type | Default | Description |
-| -------| ---- | ------- | ----------- |
-| starterPages | boolean | true | Some starter Gatsby templates are created for you, like Home, About, and Contact. Set to false if you don't want these pages created.
-| mailChimpEndpoint | string/boolean | 0 | [Your mailchimp endpoint](https://www.gatsbyjs.org/packages/gatsby-plugin-mailchimp/#mailchimp-endpoint). Set to `0` to disable.
-| dynamicComments | boolean | 1 | Enable or disable dynamic comments. If enabled, anyone can post a comment. |
-| gaTrackingId | string/boolean | 0 | Your google analytics UA code. Set to `0` to disable Google Analytics. |
-| wordPressUrl | string | `"https://scottbolinger.com"` | The URL of your WordPress site |
-| blogURI | string | '' | The path prefix on the blog and blog posts. No leading slash. `'/blog'` would result in `https://my-domain.com/blog/`
-| menuName | string/boolean | 0 | The name of the _WordPress_ menu you'd like to use or `0` if you don't want to render a menu. Note that Wordpress pages pulled into Gatsby will not render properly, so we do not recommend this option. |
-| wpPages | boolean | false | This theme does not import your WordPress pages by default, because they usually don't look very good. It usually works better to create pages in Gatsby.
-
-## Theme Customization
-
-You can customize the colors, add or remove pages, and edit template files. All theme customization should happen in the /demo folder. If you are familiar with WordPress, this is like a "child theme."
-
-Any changes you make in the main gatsby-theme-publisher folder will be overwritten by theme updates.
-
-### Logo
-
-To add your logo, add demo/src/images/site-logo.png.
-
-You will need to add a folder called images to the demo/src directory, and add your logo file inside with the name site-logo.png. You can make further modifications in the demo/src/components/Logo.js file.
-
-### Customize Theme Colors
-
-Open demo/src/gatsby-theme-publisher/theme/theme.js
-
-The theme color defaults are commented out, you can uncommment them and change the value. For example, to change the header background color, change...
-
-`// headerBg: "#2D3748"`
-
-to any color, such as...
-
-`headerBg: "#bada55"`
-
-For more options, please see [here](https://chakra-ui.com/theme)
-
-### Customize Templates
-
-To change a page template layout, you can copy the file to the demo folder. For example, to edit the header, you would copy gatsby-theme-publisher/src/components/Header.js into demo/src/components/Header.js and edit the file there. Gatsby will automatically use your header file instead of the default.
-
-This theme uses [Chakra UI](https://chakra-ui.com), which gives you a lot of easy to use components. You can use any of these components in your theme templates.
-
-## Publishing to Netlify
-
-Netlify is a static hosting environment that is free to start, and handles Gatsby sites really well. To publish your site on Netlify, first create a new account at [netlify.com](https://netlify.com).
-
-Next, add your theme project files to a Github repository.
-
-Login to Netlify and you will see a `New site from git` button at the top right corner of the screen. Click on it and authorize Netlify to use your account. Choose your website repository and it will take you to deploy settings with the below options.
-
-- Branch to deploy: You can specify a branch to monitor. When you push to that particular branch, only then will Netlify build and deploy the site. The default is master.
-- Build Command: You can specify the command you want Netlify to run when you push to the above branch. The default is `yarn build`.
-- Publish directory: You can specify which folder Netlify should use to host the website. eg. public, dist, build. The default is `public`.
-- Advanced build settings: If the site needs environment variables to build, you can specify them by clicking on Show advanced and then the New Variable button.
-
-Click on the Deploy site button and Netlify will start the build and deploy process you have specified. You can go to the Deploys tab and see the process unfold in the Deploy log. After a few moments, it will give you the live site URL eg. random-name.netlify.com.
-
-## Troubleshooting
-
-### CORS
-
-The search functionality makes remote requests to the source WordPress install. Depending on how your server/theme is configured, these requests could be blocked. There are a number of ways to set the [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin) including in a theme or plugin.
-
-*this needs to go in a plugin or in your theme's fuctions.php*
-```php
-/**
- * Add headers
- *
- * @param array $headers existing headers.
- *
- * @return array
- */
-function filter_graphql_headers( $headers ) {
-	$headers['Access-Control-Allow-Origin']  = '*'; // This should be the domain of your Gatsby site.
-	$headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS';
-
-	return $headers;
-}
-add_filter( 'graphql_response_headers_to_send', 'filter_graphql_headers' );
-```
-
+For theme options, customization, and more, please view the [main readme file here](https://github.com/staticfuse/gatsby-theme-publisher).
