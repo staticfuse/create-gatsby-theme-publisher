@@ -14,7 +14,7 @@ module.exports = {
         mailChimpEndpoint: 0,
         dynamicComments: 1,
         gaTrackingId: 0,
-        wordPressUrl: `https://staticfuse.wpengine.com`,
+        wordPressUrl: `https://publishertheme.staticfuse.com`,
         blogURI: '/blog'
       },
     },
