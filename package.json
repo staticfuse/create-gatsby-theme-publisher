@@ -13,7 +13,7 @@
     "node": ">=10.12"
   },
   "dependencies": {
-    "@staticfuse/gatsby-theme-publisher": "^0.10.4",
+    "@staticfuse/gatsby-theme-publisher": "^0.10.7",
     "gatsby": "^2.15.28",
     "react": "^16.10.0",
     "react-dom": "^16.10.0"
