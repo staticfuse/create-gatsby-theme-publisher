@@ -16,7 +16,7 @@ For a full tutorial, please see our article on [headless WordPress with Gatsby](
 3.  Install dependencies `yarn`
 4.  Install [WPGraphQL plugin on your WordPress site](https://github.com/wp-graphql/wp-graphql)
 5.  Configure your site options in [gatsby-config.js](https://github.com/staticfuse/create-gatsby-theme-publisher/blob/master/gatsby-config.js) Explanation of the options is [below](https://github.com/staticfuse/create-gatsby-theme-publisher#publisher-theme-options)
-6.  Start the demo site `yarn start`
+6.  Start the demo site `gatsby develop`
 7.  Add your logo and [customize the theme](https://github.com/staticfuse/create-gatsby-theme-publisher#theme-customization)
 8.  [Publish to Netlify](https://github.com/staticfuse/create-gatsby-theme-publisher#publishing-to-netlify) or any static host.
 
