@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Box } from "@chakra-ui/core"
 
@@ -26,18 +26,12 @@ const Logo = ({ data }) => {
   `)
   return (
     <Box position={["absolute", "absolute", "static"]} left="0" right="0" m={["auto", "auto","0"]} w="50px">
-      <Link
-        to="/"
-        className="h-10 overflow-hidden block"
-        style={{
-          overflow: "hidden",
-          height: "50px",
-          width: "50px",
-          display: "block",
-          padding: "5px"
-        }}
-        rel="home"
-        itemProp="url"
+      <Box
+        overflow="hidden"
+        h="50px"
+        w="50px"
+        display="block"
+        p="5px"
       >
         <Img
           fixed={imageData.file.childImageSharp.fixed}
@@ -50,7 +44,7 @@ const Logo = ({ data }) => {
             height: "100%",
           }}
         />
-      </Link>
+      </Box>
     </Box>
   )
 }
