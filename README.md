@@ -6,6 +6,14 @@ A Gatsby starter that has the [Gatsby Theme Publisher](https://github.com/static
 
 For a full tutorial, please see our article on [headless WordPress with Gatsby](https://staticfuse.com/blog/how-to-build-headless-wordpress-sites-with-gatsby/).
 
+### Example Sites
+
+These sites all use the Publisher theme with WordPress as the backend.
+
+- [staticfuse.com](https://staticfuse.com)
+- [scottbolinger.com](https://scottbolinger.com)
+- [demo site](https://publisher.staticfuse.com)
+
 ### Prequisites
 
 - [Node and NPM](https://www.gatsbyjs.org/tutorial/part-zero/#-install-nodejs-and-npm)
