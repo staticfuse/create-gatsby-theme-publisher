@@ -1,5 +1,7 @@
 # Create Gatsby WordPress Publisher Theme
 
+![Gatsby Theme Publisher Screenshot](https://data.staticfuse.com/wp-content/uploads/2019/10/publisher-hero.jpg)
+
 A Gatsby starter that has the [Gatsby Theme Publisher](https://github.com/staticfuse/gatsby-theme-publisher) installed and preconfigured.
 
 For a full tutorial, please see our article on [headless WordPress with Gatsby](https://staticfuse.com/blog/how-to-build-headless-wordpress-sites-with-gatsby/).
@@ -41,7 +43,7 @@ module.exports = {
         mailChimpEndpoint: 0, // https://www.gatsbyjs.org/packages/gatsby-plugin-mailchimp/#mailchimp-endpoint
         dynamicComments: 1, // enable comments
         gaTrackingId: 0, // google analytics tracking
-        wordPressUrl: `https://data.mysite.com`, // The url of your WordPress install
+        wordPressUrl: `https://mywpinstall.com`, // The url of your WordPress install
         blogURI: '/blog' // The page to display your posts
       },
     },
