@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@staticfuse/gatsby-theme-publisher": "^0.10.8",
-    "gatsby": "^2.15.28",
+    "gatsby": "^4.25.7",
     "react": "^16.10.0",
     "react-dom": "^16.10.0"
   }
